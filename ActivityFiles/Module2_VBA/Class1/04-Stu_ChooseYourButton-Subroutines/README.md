@@ -12,3 +12,5 @@ In this activity, you’ll get to practice creating subroutines that can be trig
 
 —
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Check code in unsolved folder of Class 3
