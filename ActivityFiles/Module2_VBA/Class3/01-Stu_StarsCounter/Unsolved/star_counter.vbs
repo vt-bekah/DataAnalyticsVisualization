@@ -10,25 +10,31 @@
 Sub StarCounter()
 
   ' Create a variable to hold the StarCounter. We will repeatedly use this.
+  Dim Stars as Integer
 
-  ' Loop through each row
-  for i = 2 to 51
+  ' Loop through each row. Instead of hard-coding the last number of the loop, use VBA to determine the last row.
+  for i = 2 to Cells(Rows.Count, 1).End(xlUp).Row
 
     ' Initially set the StarCounter to be 0 for each row
-
+    Stars = 0
 
     ' While in each row, loop through each star column
-
+    for j = 4 to 8
 
       ' If a column contains the word "Full-Star"...
-
+      If Cells(i,j) = "Full-Star" Then
 
         ' Add 1 to the StarCounter
+        Stars = Stars + 1
 
+      End If
 
     ' Once we've iterated through each column in row i, print the value in the total column.
+    Next j
 
+    Cells(i, 9).Value = Stars
 
   Next i
 
 End Sub
+
