@@ -6,7 +6,9 @@ import csv
 desired_title = input("What book title would you like to search? ")
 
 # Set path for file
+# print('Get current working directory : ', os.getcwd()) # C:\Users\vt_be\UTA_DAV\GitRepo
 csvpath = os.path.join("..", "Resources", "comic_books.csv")
+print(csvpath)
 
 # Set variable to check if we found the video
 found = False
