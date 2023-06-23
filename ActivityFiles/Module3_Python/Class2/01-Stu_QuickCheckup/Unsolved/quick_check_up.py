@@ -7,7 +7,7 @@ print("Hello User!")
 user_name = input("What is your name? ")
 
 # Respond Back with User Input
-print(f"Hello {user_name}")
+print(f"Hello {user_name}!")
 
 
 # Take in the User Favorite Number
