@@ -1,3 +1,5 @@
+import string
+
 # initialize list of names for user input
 names = []
 
@@ -6,14 +8,16 @@ for i in range(5):
     name = input("Please enter the name of someone you know. ")
     names.append(name)
 
-# @TODO: Use a list comprehension to create a list of lowercased names
-lowercased = ["YOUR CODE HERE!"]
+# Use a list comprehension to create a list of lowercased names
+lowercased = [guest.lower() for guest in names]
+print(lowercased)
 
-# @TODO: Use a list comprehension to create a list of titlecased names from the
+# Use a list comprehension to create a list of titlecased names from the
 # lowercased names. Reference: https://www.tutorialspoint.com/python/string_title.htm
-titlecased = ["YOUR CODE HERE!"]
+titlecased = [guest.title() for guest in lowercased]
+print(titlecased)
 
-# Print the invitations
+# Print the invitations using list comprehension to create a list of strings
 invitations = [f"Dear {name}, please come to the wedding this Saturday!" for name in titlecased]
 for invitation in invitations:
     print(invitation)

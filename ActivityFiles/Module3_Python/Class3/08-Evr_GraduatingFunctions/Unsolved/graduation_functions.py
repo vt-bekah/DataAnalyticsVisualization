@@ -3,6 +3,12 @@ import csv
 
 # Path to collect data from the Resources folder
 
+# print('Get current working directory : ', os.getcwd()) # C:\Users\vt_be\UTA_DAV\GitRepo
+# use the csvpath below if running terminal in VScode
+csvpath = os.path.join(os.getcwd(), "DataAnalyticsVisualization\ActivityFiles", "Module3_Python\Class2", "09-Stu_ReadComicBooksCSV", "Resources", "comic_books.csv")
+# use the csvpath below if running from GitBash in the comics.py location
+# csvpath = os.path.join(os.getcwd(), "Resources", "comic_books.csv")
+
 
 # Define the function and have it accept the 'state_data' as its sole parameter
 
